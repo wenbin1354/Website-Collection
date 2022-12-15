@@ -5,8 +5,8 @@ A collection of websites (mainly html+css) I built for practice.
 <br />
 
 ## Cat-Photo-App
-![cat photo app](./images/cat-photo-app.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/cat-photo-app.html)
+![cat photo app](./cat-photo-app/cat-photo-app.jpg)
+[Link](https://wenbin1354.github.io/Website-Collection/cat-photo-app/cat-photo-app.html)
 
 <br />
 
