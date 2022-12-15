@@ -5,23 +5,23 @@ A collection of websites (mainly html+css) I built for practice.
 <br />
 
 ## Cat-Photo-App
-![cat photo app](./cat-photo-app/cat-photo-app.jpg)
+[<img src="./cat-photo-app/cat-photo-app.jpg">](https://wenbin1354.github.io/Website-Collection/cat-photo-app/cat-photo-app.html)
 [Link](https://wenbin1354.github.io/Website-Collection/cat-photo-app/cat-photo-app.html)
 
 <br />
 
 ## Coffee-Shop
-![coffee shop](./images/coffee-shop.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/coffee-shop.html)
+[<img src="./coffee-shop/coffee-shop.jpg">](https://wenbin1354.github.io/Website-Collection/coffee-shop/coffee-shop.html)
+[Link](https://wenbin1354.github.io/Website-Collection/coffee-shop/coffee-shop.html)
 
 <br />
 
 ## Marker
-![marker](./images/marker.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/marker.html)
+[<img src="./marker/marker.jpg">](https://wenbin1354.github.io/Website-Collection/marker/marker.html)
+[Link](https://wenbin1354.github.io/Website-Collection/marker/marker.html)
 
 <br />
 
 ## Registration-Form
-![registration form](./images/registration-form.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/registration-form.html)
+[<img src="./registration-form/registration-form.jpg">](https://wenbin1354.github.io/Website-Collection/registration-form/registration-form.html)
+[Link](https://wenbin1354.github.io/Website-Collection/registration-form/registration-form.html)
