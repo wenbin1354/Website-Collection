@@ -5,23 +5,23 @@ A collection of websites (mainly html+css) I built for practice.
 <br />
 
 ## Cat-Photo-App
-![cat photo app](./cat-photo-app/cat-photo-app.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/cat-photo-app/cat-photo-app.html)
+![cat photo app](./images/cat-photo-app.jpg)
+[Link](https://github.com/wenbin1354/Website-Collection/cat-photo-app.html)
 
 <br />
 
 ## Coffee-Shop
-![coffee shop](./coffee-shop/coffee-shop.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/coffee-shop/coffee-shop.html)
+![coffee shop](./images/coffee-shop.jpg)
+[Link](https://github.com/wenbin1354/Website-Collection/coffee-shop.html)
 
 <br />
 
 ## Marker
-![marker](./marker/marker.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/marker/marker.html)
+![marker](./images/marker.jpg)
+[Link](https://github.com/wenbin1354/Website-Collection/marker.html)
 
 <br />
 
 ## Registration-Form
-![registration form](./registration-form/registration-form.jpg)
-[Link](https://github.com/wenbin1354/Website-Collection/registration-form/registration-form.html)
+![registration form](./images/registration-form.jpg)
+[Link](https://github.com/wenbin1354/Website-Collection/registration-form.html)
