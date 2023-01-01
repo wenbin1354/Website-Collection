@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #canvas {
+            display: block;
+            background: linear-gradient(#34fdaa, #08b1ac);
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="myaudio" src=""></audio>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        let audioArray = ['Sample.mp3'];
+        let audioNum = 0;
+        let oAudio = document.getElementById('myaudio');
+        oAudio.crossOrigin = 'anonymous';
+        oAudio.src = `./MP3/${audioArray[audioNum]}`;
+        let WIDTH = canvas.width;
+        let HEIGHT = canvas.height;
+        window.onclick = function () {
+            if (oAudio.paused) {
+                oAudio.play();
+            } else {
+                oAudio.pause();
+            }
+            let oCtx = new AudioContext();
+            let audioSrc = oCtx.createMediaElementSource(oAudio);
+            let analyser = oCtx.createAnalyser();
+            audioSrc.connect(analyser);
+            analyser.connect(oCtx.destination);
+            analyser.fftSize = 512;
+            let bufferLength = analyser.frequencyBinCount
+            let dataArray = new Uint8Array(bufferLength)
+            let barWidth = ((WIDTH / bufferLength) - 1)
+            let barHeight
+
+            function draw() {
+                analyser.getByteFrequencyData(dataArray);
+                let x = 0;
+                ctx.clearRect(0, 0, WIDTH, HEIGHT);
+                for (let i = 0; i < bufferLength; i++) {
+                    barHeight = dataArray[i]
+                    ctx.fillStyle = 'rgb(228,255,255)'
+                    ctx.fillRect(WIDTH / 2 + x, HEIGHT / 2, barWidth, -barHeight)
+                    ctx.fillRect(WIDTH / 2 - x, HEIGHT / 2, barWidth, -barHeight)
+                    ctx.fillRect(WIDTH / 2 + x, HEIGHT / 2, barWidth, barHeight)
+                    ctx.fillRect(WIDTH / 2 - x, HEIGHT / 2, barWidth, barHeight)
+                    x += barWidth + 1;
+                }
+                window.requestAnimationFrame(draw)
+            }
+
+            draw()
+        }
+
+        oAudio.onended = function () {
+            console.log("Finish Playing")
+            if (audioNum === audioArray.length - 1) {
+                audioNum = 0
+            } else {
+                audioNum++
+            }
+            oAudio.src = `./music/${audioArray[audioNum]}`
+            oAudio.play()
+        }
+    </script>
+</body>
+
+</html>
