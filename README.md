@@ -25,3 +25,9 @@ A collection of websites (mainly html+css) I built for practice.
 ## Registration-Form
 [<img src="./registration-form/registration-form.jpg" width="150" height="160">](https://wenbin1354.github.io/Website-Collection/registration-form/registration-form.html)
 [Link](https://wenbin1354.github.io/Website-Collection/registration-form/registration-form.html)
+
+<br />
+
+## Navigation-Menu
+[<img src="./navigation-menu/navigation-menu.jpg" width="150" height="150">](https://wenbin1354.github.io/Website-Collection/navigation-menu/navigation-menu.html)
+[Link](https://wenbin1354.github.io/Website-Collection/navigation-menu/navigation-menu.html)
