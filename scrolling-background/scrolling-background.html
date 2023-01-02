@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scrolling Background</title>
+    <link rel="stylesheet" href="scrolling-background.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://github.com/wenbin1354" target="_blank" class="logo"><i class="fa fa-github" style="font-size:36px"></i></a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Blank</a></li>
+            <li><a href="#">Blank</a></li>
+            <li><a href="#">Blank</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/sky.png" id="sky">
+        <img src="images/sun.png" id="sun">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Dawn</h2>
+        <a href="#sec" id="btn">Explore More</a>
+        <img src="images/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Scrolling Effects</h2>
+        <p>Uses window.addEventListener and CSS to perform scrolling effect on the background images.</p>
+    </div>
+
+    <script>
+        let sky = document.getElementById('sky')
+        let sun = document.getElementById('sun')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            sky.style.left = value * 0.25 + 'px'
+            sun.style.top = value * 1.05 + 'px'
+            mountains_behind.style.top = value * 0.5 + 'px'
+            mountains_front.style.top = value * 0 + 'px'
+            text.style.marginRight = value * 4 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop = value * 1.5 + 'px'
+            header.style.top = value * 0.5 + 'px'
+        })
+    </script>
+</body>
+
+</html>
